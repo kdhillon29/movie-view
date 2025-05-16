@@ -21,3 +21,181 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/* NAVIGATION */
+
+.nav__content {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(194, 46, 13, 0.7);
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  filter: grayscale(0.5);
+  z-index: 1;
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__logo--wrapper {
+  width: 80px;
+  margin-right: 32px;
+}
+
+.nav__logo {
+  max-width: 100%;
+  filter: invert(0.9);
+}
+
+.nav__link {
+  margin: 0 16px;
+  font-weight: 200;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 1px transparent solid;
+  transition: color 400ms ease, border-bottom-color 400ms ease;
+}
+
+.nav__link:hover {
+  color: crimson;
+  border-bottom-color: crimson;
+}
+
+.nav__input--wrapper {
+  position: relative;
+}
+
+.nav__input {
+  padding: 12px 4px 12px 32px;
+  border-radius: 40px;
+  width: 0px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: 24px;
+  transition: width 500ms ease;
+  cursor: default;
+}
+
+.nav__search {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: white;
+}
+
+.nav__input:focus,
+.nav__input:active {
+  width: 240px;
+  outline: 2px #fff solid;
+  cursor: text;
+}
+
+.nav__settings {
+  cursor: not-allowed;
+}
+
+/* MOVIE BACKGROUND */
+
+.movie__background--wrapper {
+  height: 420px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 60px 50px 0 rgb(5, 5, 5, 0.45);
+}
+
+.movie__background--img {
+  filter: opacity(30%);
+}
+
+.movie__background--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.movie__background--title {
+  font-size: 60px;
+  font-weight: 200;
+  margin-top: 80px;
+  margin-bottom: 12px;
+}
+
+.movie__background--para {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.movie__background--button {
+  padding: 12px 30px;
+}
+
+.movie__input--wrapper {
+  position: relative;
+}
+
+.movie__input {
+  padding: 24px 60px 24px 30px;
+  border-radius: 40px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px #fff solid;
+  font-size: 20px;
+  transition: 400ms ease;
+  max-width: 100%;
+}
+
+.movie__input:focus,
+.movie__input:active {
+  transform: scale(1.02);
+  outline: none;
+  box-shadow: 0px 0px 8px crimson;
+}
+
+.movie__input:focus + .movie__search {
+  transform: scale(1.02), translateY(-50%);
+}
+
+.movie__search {
+  position: absolute;
+  font-size: 24px;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  transition: 400ms ease;
+  cursor: pointer;
+}
+
+.movie__search:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.movie__search:active {
+  transform: translateY(-50%) scale(0.8);
+}
