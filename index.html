@@ -4,6 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie View</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fc0b80239e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <section id="landing">
+      <div class="movie__background">
+        <figure class="movie__background--wrapper">
+          <div class="nav__content">
+            <div class="nav__left">
+              <figure class="nav__logo--wrapper">
+                <img src="assets/movielogo.png" alt="" class="nav__logo" />
+              </figure>
+              <a href="#home" class="nav__link">Home</a>
+              <a href="" class="nav__link">Contact</a>
+            </div>
+            <div class="nav__right">
+              <div class="nav__input--wrapper">
+                <input
+                  type="text"
+                  class="nav__input"
+                  placeholder="Find a movie"
+                  onkeyup="searchBarEnter(event)"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass nav__search"
+                  onclick="searchActive()"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <i class="fa-solid fa-gear nav__settings" aria-hidden="true"></i>
+            </div>
+          </div>
+          <img
+            src="assets/moviebackground.jpg"
+            alt=""
+            class="movie__background--img"
+          />
+          <div class="movie__background--text">
+            <h1 class="movie__background--title">
+              Ticket<span class="textcolor">+</span>
+            </h1>
+            <h3 class="movie__background--para">
+              With over <span class="textcolor">3000</span> movies on
+              Ticket<span class="textcolor">+</span>, the possibilites are
+              endless!
+            </h3>
+            <div class="movie__background--search">
+              <div class="movie__input--wrapper form__submit">
+                <input
+                  type="text"
+                  class="movie__input"
+                  placeholder="Find a movie"
+                  onkeyup="searchBarEnter(event)"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass movie__search"
+                  onclick="searchBarClick()"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </body>
 </html>
