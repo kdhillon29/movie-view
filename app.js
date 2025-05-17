@@ -1,10 +1,10 @@
 async function searchActive() {
   const input = document.querySelector(".nav__input");
   input.focus();
-  await searchClick();
+  //   await searchIconClick();
 }
 
-async function searchClick() {
+async function searchIconClick() {
   const input = document.querySelector(".nav__input");
   const value = document.querySelector(".nav__input").value;
   if (!value) return;

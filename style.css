@@ -276,6 +276,10 @@ a {
 .movies__list--loading-visible {
   display: block !important;
 }
+.movies__list--no-movies {
+  font-size: 24px;
+  font-weight: 300;
+}
 
 @keyframes loading {
   0% {

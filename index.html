@@ -25,17 +25,17 @@
               <a href="" class="nav__link">Contact</a>
             </div>
             <div class="nav__right">
-              <div class="nav__input--wrapper">
+              <div class="nav__input--wrapper" onclick="searchIconClick()">
                 <input
                   type="text"
                   class="nav__input"
                   placeholder="Find a movie"
                   onkeyup="searchBarEnter(event)"
-                  onclick="searchActive()"
+                  onchange="searchIconClick()"
                 />
                 <i
                   class="fa-solid fa-magnifying-glass nav__search"
-                  onclick="searchActive();console.log('clicked')"
+                  onclick="setTimeout(() => {searchActive()}, 100);"
                   aria-hidden="true"
                 ></i>
               </div>
