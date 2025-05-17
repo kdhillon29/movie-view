@@ -95,14 +95,17 @@ a {
 
 .nav__search {
   position: absolute;
-  left: 8px;
+  width: 32px;
+  height: 32px;
+  right: 16px;
   top: 10px;
   cursor: pointer;
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 .fa-solid {
   color: white;
+  font-size: 24px;
 }
 
 .nav__input:focus,
