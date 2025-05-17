@@ -29,7 +29,7 @@ a {
   top: 2px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(194, 46, 13, 0.7);
+  background-color: rgba(132, 37, 46, 0.7);
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -70,6 +70,7 @@ a {
 .nav__link:hover {
   color: crimson;
   border-bottom-color: crimson;
+  font-weight: 700;
 }
 
 .nav__input--wrapper {
@@ -83,6 +84,7 @@ a {
   background-color: transparent;
   color: #fff;
   border: none;
+  /* background: green; */
   margin-right: 24px;
   transition: width 500ms ease;
   cursor: default;
@@ -93,6 +95,7 @@ a {
   left: 8px;
   top: 10px;
   cursor: pointer;
+  z-index: 20;
 }
 
 .fa-solid {
